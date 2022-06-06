@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main__input {
+  background: #FFFFFF;
+  border: 1px solid rgba(67, 78, 90, 0.2);
+  border-radius: 8px;
+  width: 242px;
+  height: 44px;
+  outline: none;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  margin-bottom: 16px;
+
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(67, 78, 90, 0.6);
+  padding-left: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main__btn {
+  width: 143px;
+  height: 52px;
+  background: #3A83B8;
+  border-radius: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 1px solid #3A83B8;
+  outline: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  margin-top: 32px;
 }
 
-.App-link {
-  color: #61dafb;
+.dashboard {
+  width: 540px;
+  height: 540px;
+  background: #F3F9FC;
+  border-radius: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboard__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard__container--reverse {
+  flex-direction: column-reverse;
+}
+
+.dashboard__star {
+  width: 16px;
+  height: 44px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: #3A83B8;
+}
+
+.dashboard__item {
+  display: flex;
+  gap: 32px;
 }
